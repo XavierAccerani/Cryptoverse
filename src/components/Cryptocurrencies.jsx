@@ -7,10 +7,9 @@ import { Card, Row, Col, Input} from 'antd';
 import { useGetCryptosQuery } from '../services/cryptoApi';
 
 
-function Cryptocurrencies( simplified ) {
-    console.log("simplified : ", simplified)
+function Cryptocurrencies( {simplified} ) {
+    
     const count = simplified ? 10 : 100;
-    console.log("count : ", count);
 
 // 1 05 34
 
