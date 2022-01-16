@@ -24,7 +24,6 @@ function Cryptocurrencies( {simplified} ) {
 
     if ( isFetching ) return 'Loading ...';
 
-// 1 10 00
     return (
         <>
         { !simplified &&(
