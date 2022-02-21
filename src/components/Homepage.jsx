@@ -11,9 +11,12 @@ import { Cryptocurrencies, News } from '../components';
 const { Title } = Typography; 
 
 function Homepage() {
+    console.log("LOG 2 Homepage")
     const { data, isFetching } = useGetCryptosQuery(10);
+    console.log("LOG 3 Homepage")
 
     const globalStats = data?.data?.stats;
+    console.log("LOG 4 Homepage")
 
     if(isFetching) return 'Loading..';
 
